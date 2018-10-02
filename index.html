@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Poor Man's Twitter using VUE and Django</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poor Man's Twitter using VUE and Django">
+  </head>
+  <body>
+    {% load render_bundle from webpack_loader %}
+    <div id="app">
+       <app> </app>
+    </div>
+   {% render_bundle 'main' %}
+  </body>
+</html>
